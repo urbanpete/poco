@@ -2,19 +2,19 @@ rm -rf bin64
 rm -rf lib64
 call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\vsvars32.bat"
 cd CppUnit
-"%AIRWARE_MSBUILD15%\msbuild" CppUnit_x64_vs140.sln /property:Configuration=%1
+"%AIRWARE_MSBUILD15%\msbuild" CppUnit_x64_vs140.sln /property:Configuration=%1 /m
 cd ..
 cd Foundation
-"%AIRWARE_MSBUILD15%\msbuild" Foundation_x64_vs140.sln /property:Configuration=%1
+"%AIRWARE_MSBUILD15%\msbuild" Foundation_x64_vs140.sln /property:Configuration=%1 /m
 cd ..
 cd XML
-"%AIRWARE_MSBUILD15%\msbuild" XML_x64_vs140.sln /property:Configuration=%1
+"%AIRWARE_MSBUILD15%\msbuild" XML_x64_vs140.sln /property:Configuration=%1 /m
 cd ..
 cd JSON
-"%AIRWARE_MSBUILD15%\msbuild" JSON_x64_vs140.sln /property:Configuration=%1
+"%AIRWARE_MSBUILD15%\msbuild" JSON_x64_vs140.sln /property:Configuration=%1 /m
 cd ..
 cd Util
-"%AIRWARE_MSBUILD15%\msbuild" Util_x64_vs140.sln /property:Configuration=%1
+"%AIRWARE_MSBUILD15%\msbuild" Util_x64_vs140.sln /property:Configuration=%1 /m
 cd ..
 mkdir poco-x86_64-win-msvc-%1
 mkdir poco-x86_64-win-msvc-%1\include
