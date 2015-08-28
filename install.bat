@@ -1,3 +1,5 @@
+call buildwin 140 clean
+call buildwin 140 build shared both x64 nosamples notests
 mkdir poco-x86_64-win-msvc
 mkdir poco-x86_64-win-msvc\include
 mkdir poco-x86_64-win-msvc\include\Poco
