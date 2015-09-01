@@ -9,5 +9,6 @@ cp -rf ./XML/include/Poco/XML poco-x86_64-linux-gcc/include/Poco/XML
 cp -rf ./XML/include/Poco/DOM poco-x86_64-linux-gcc/include/Poco/DOM 
 cp -rf ./XML/include/Poco/SAX poco-x86_64-linux-gcc/include/Poco/SAX 
 cp -rf ./JSON/include/Poco/JSON poco-x86_64-linux-gcc/include/Poco/JSON 
+cp readme*.md poco-x86_64-win-msvc
 
 
