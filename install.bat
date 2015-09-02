@@ -28,3 +28,4 @@ xcopy JSON\include\Poco\*.* poco-x86_64-win-msvc-%1\include\Poco /s /Y
 copy bin64\*.dll poco-x86_64-win-msvc-%1\bin /Y
 copy lib64\*.lib poco-x86_64-win-msvc-%1\lib /Y
 copy readme*.md poco-x86_64-win-msvc-%1
+copy pocoConfig.cmake poco-x86_64-win-msvc-%1
