@@ -14,9 +14,12 @@ set(${PKG_NAME}_LIBS
 if (${CMAKE_BUILD_TYPE} MATCHES debug)
     set(BuildTypeLibExtension "d")
 endif()   
+if (${TARGET_NAME} MATCHES "x86_64-linux-gcc")
+    set(LibraryPrefix "lib")
+endif()   
 foreach(lib ${${PKG_NAME}_LIBS})
     add_library(${lib}  STATIC IMPORTED)
-    set_property(TARGET ${lib} PROPERTY IMPORTED_LOCATION ${${PKG_NAME}_LIB_DIR}/${lib}${BuildTypeLibExtension}${CMAKE_STATIC_LIBRARY_SUFFIX})
+    set_property(TARGET ${lib} PROPERTY IMPORTED_LOCATION ${${PKG_NAME}_LIB_DIR}/${LibraryPrefix}${lib}${BuildTypeLibExtension}${CMAKE_STATIC_LIBRARY_SUFFIX})
 endforeach(lib)
 
 add_definitions(-DPOCO_NO_AUTOMATIC_LIBS)
