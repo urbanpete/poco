@@ -12,7 +12,9 @@ set(${PKG_NAME}_LIBS
     PocoXML)
 
 if (${CMAKE_BUILD_TYPE} MATCHES debug)
-    set(BuildTypeLibExtension "d")
+    set(BuildTypeLibExtension "mtd")
+else()   
+    set(BuildTypeLibExtension "mt")
 endif()   
 if (${TARGET_NAME} MATCHES "x86_64-linux-gcc")
     set(LibraryPrefix "lib")
