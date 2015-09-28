@@ -6,10 +6,10 @@ set(${PKG_NAME}_INCLUDE_DIR ${THIS_CMAKE_DIR}/include)
 set(${PKG_NAME}_SRC_DIR ${THIS_CMAKE_DIR}/src)
 
 set(${PKG_NAME}_LIBS
-    PocoFoundation
-    PocoJSON
     PocoUtil
-    PocoXML)
+    PocoJSON
+    PocoXML
+    PocoFoundation)
 
 if (${CMAKE_BUILD_TYPE} MATCHES debug)
     set(BuildTypeLibExtension "mdd")
